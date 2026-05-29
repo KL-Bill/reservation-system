@@ -4,4 +4,4 @@ const getUserModel = (req_body) => {
     return db.getUser(req_body.id);
 }
 
-module.exports = getUserModel;
+module.exports = getUserModel
