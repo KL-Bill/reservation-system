@@ -22,7 +22,7 @@ const getAllUser = () => {
 const getUser = (id) => {
     for (let i = 0; i < users.length; i++) {
         if (users[i].id == id) {
-            return users
+            return users[i]
         }
     }
 }
