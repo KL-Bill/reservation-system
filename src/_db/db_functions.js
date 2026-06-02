@@ -29,6 +29,10 @@ const getAllUser = () => {
     return users;
 }
 
+const getAllClients = () => {
+    return clients;
+}
+
 const getUser = (id) => {
     for (let i = 0; i < users.length; i++) {
         if (users[i].id == id) {
@@ -52,5 +56,6 @@ module.exports = {
     getAllUser,
     getUser,
     checkLogin,
-    addClient
+    addClient,
+    getAllClients
 }
