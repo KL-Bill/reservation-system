@@ -1,5 +1,11 @@
 const users = [];
 const clients = [];
+const admin = [{
+    id: 1,
+    name: "adminName",
+    username: "admin",
+    password: "admin123"
+}]
 
 
 const addClient = (id, username, name, password) => {
@@ -51,11 +57,33 @@ const checkLogin = (username, password) => {
     return null;
 }
 
+const clientCheckLogin = (username, password) => {
+    for (let i = 0; i < clients.length; i++) {
+        if (clients[i].username == username && clients[i].password == password) {
+            return clients[i];
+        }
+    }
+
+    return null;
+}
+
+const adminCheckLogin = (username, password) => {
+    for (let i = 0; i < admin.length; i++) {
+        if (admin[i].username == username && admin[i].password == password) {
+            return admin[i];
+        }
+    }
+
+    return null;
+}
+
 module.exports = {
     addUser,
     getAllUser,
     getUser,
     checkLogin,
     addClient,
-    getAllClients
+    getAllClients,
+    clientCheckLogin,
+    adminCheckLogin
 }

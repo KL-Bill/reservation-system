@@ -8,7 +8,7 @@ const signupModel = (req_body) => {
 
 
     return response;
-
+    
 }
 
 module.exports = signupModel;
