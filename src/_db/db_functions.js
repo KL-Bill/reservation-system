@@ -1,15 +1,25 @@
-const users = [
-    {id: 111, username: "sups", password: "sups123", name: "Superman"},
-    {id: 222, username: "batsy", password: "bats123", name: "Batman"},
-    {id: 333, username: "spidey", password: "spidey123", name: "Spiderman"},
-];
+const users = [];
+const clients = [];
 
-const addUser = (id, username, password, name) => {
+
+const addClient = (id, username, name, password) => {
+    clients.push({
+        id,
+        username,
+        name,
+        password
+    })
+    return true
+}
+
+
+const addUser = (id, username, name, password) => {
     users.push({
         id,
         username,
-        password, 
-        name
+        name,
+        password
+        
     })
 
     return true
@@ -17,6 +27,10 @@ const addUser = (id, username, password, name) => {
 
 const getAllUser = () => {
     return users;
+}
+
+const getAllClients = () => {
+    return clients;
 }
 
 const getUser = (id) => {
@@ -41,5 +55,7 @@ module.exports = {
     addUser,
     getAllUser,
     getUser,
-    checkLogin
+    checkLogin,
+    addClient,
+    getAllClients
 }
