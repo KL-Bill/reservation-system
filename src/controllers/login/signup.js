@@ -1,6 +1,6 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
-// const singupModel = require('../../models/login/signup')
+const singupModel = require('../../models/login/signup')
 
 const singupController = (req, res) => {
     const { id, name, username, password } = req.body;
