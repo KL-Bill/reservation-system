@@ -1,5 +1,24 @@
 const users = [];
-const clients = [];
+const clients = [
+    {
+        id: 1,
+        name: "Bebot Billones",
+        username: "Bebot",
+        password: "bebot123"
+    },
+    {
+        id: 2,
+        name: "Jaireh Villamor",
+        username: "Jaireh",
+        password: "jaireh123"
+    },
+    {
+        id: 3,
+        name: "Thayer Villamor",
+        username: "Thayer",
+        password: "thayer123"
+    }
+];
 const admin = [{
     id: 1,
     name: "adminName",
