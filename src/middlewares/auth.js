@@ -33,4 +33,5 @@ const authenticateApi = (req, res, next) => {
 module.exports = {
   signAccess,
   authenticateApi,
+  verifyToken
 };
