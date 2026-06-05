@@ -26,5 +26,6 @@ const { authenticateApi }   = require('./middlewares/auth.js');
 app.use('', require('./routers/login.js'))
 
 app.use('/user', require('./routers/user.js'))
+app.use('/event', require('./routers/events.js'))
 
 module.exports = app;

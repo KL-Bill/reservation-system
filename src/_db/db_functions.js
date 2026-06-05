@@ -137,5 +137,6 @@ module.exports = {
     addClient,
     getAllClients,
     clientCheckLogin,
-    adminCheckLogin
+    adminCheckLogin,
+    getAllEvents
 }
