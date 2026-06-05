@@ -99,6 +99,14 @@ const getUser = (id) => {
     }
 }
 
+const getClient = (id) => {
+    for (let i = 0; i < clients.length; i++) {
+        if (clients[i].id == id) {
+            return clients[i]
+        }
+    }
+}
+
 const checkLogin = (username, password) => {
     for (let i = 0; i < users.length; i++) {
         if (users[i].username == username && users[i].password == password) {
@@ -137,5 +145,6 @@ module.exports = {
     addClient,
     getAllClients,
     clientCheckLogin,
-    adminCheckLogin
+    adminCheckLogin,
+    getClient
 }

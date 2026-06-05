@@ -27,4 +27,6 @@ app.use('', require('./routers/login.js'))
 
 app.use('/user', require('./routers/user.js'))
 
+app.use('/client', require('./routers/client.js'))
+
 module.exports = app;
