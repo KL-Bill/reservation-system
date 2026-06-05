@@ -26,6 +26,35 @@ const admin = [{
     password: "admin123"
 }]
 
+const events = [
+    {
+        id: 1,
+        clientId: 2,
+        date: "June 10, 2026",
+        time: "9:00am - 5:00pm",
+        venue: "D'veranda",
+        type: "Birthday"
+    },
+    {
+        id: 2,
+        clientId: 3,
+        date: "June 20, 2026",
+        time: "6:00am - 10:00am",
+        venue: "Rotary",
+        type: "Wedding"
+    },
+    {
+        id: 3,
+        clientId: 1,
+        date: "June 15, 2026",
+        time: "11:00am - 6:00pm",
+        venue: "Pool @Prk.Papaya, Mankilam",
+        type: "Party"
+    }
+]
+
+
+
 
 const addClient = (id, username, name, password) => {
     clients.push({
