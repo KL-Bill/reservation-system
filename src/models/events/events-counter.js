@@ -4,4 +4,4 @@ const getEventsCountModel = (req, res) => {
     return db.getEventsCounter()
 }
 
-module.exports = getEventsCountModel;
+module.exports = getEventsCountModel

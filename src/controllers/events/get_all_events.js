@@ -5,4 +5,5 @@ const getAllEventsController = (req, res) => {
     res.send(getAllEventsModel())
 }
 
+
 module.exports = getAllEventsController

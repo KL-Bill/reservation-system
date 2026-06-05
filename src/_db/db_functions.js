@@ -73,7 +73,7 @@ const addUser = (id, username, name, password) => {
         username,
         name,
         password
-        
+
     })
 
     return true
@@ -90,6 +90,14 @@ const getAllClients = () => {
 const getAllEvents = () => {
     return events;
 }
+
+const getEventsCounter = () => {
+    var eventsCounter = events.length
+
+    return eventsCounter;
+
+}
+
 
 const getUser = (id) => {
     for (let i = 0; i < users.length; i++) {
@@ -138,5 +146,6 @@ module.exports = {
     getAllClients,
     clientCheckLogin,
     adminCheckLogin,
-    getAllEvents
+    getAllEvents,
+    getEventsCounter
 }
