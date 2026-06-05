@@ -87,6 +87,10 @@ const getAllClients = () => {
     return clients;
 }
 
+const getAllEvents = () => {
+    return events;
+}
+
 const getUser = (id) => {
     for (let i = 0; i < users.length; i++) {
         if (users[i].id == id) {
